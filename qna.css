@@ -1,0 +1,37 @@
+body.black {
+    background-color:black;
+    color:white;
+    }
+body.white {
+    background-color:white;
+    color:black;
+    }
+header{
+    border-bottom:1px solid gray;
+    padding:30px;
+    font-family:'Malgun Gothic';
+    }
+nav {
+    border-right:1px solid gray;
+    width:200px;
+    height:900px;
+    float:left;
+    line-height:30px;
+    }
+nav ul {
+    list-style:none;
+    margin-top: 10px;
+}
+article{
+    float:left;
+    padding:20px;
+}
+#control {
+    float:right;
+}
+#a {
+    right:0px;
+    position: fixed;
+    bottom:0px;
+    width:500px;
+}

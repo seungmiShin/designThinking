@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <meta name="description" content="프로젝트 이름"">
+    <style>
+        *{
+            box-sizing:border-box;
+            text-align: center;
+        }
+        #wrap{
+            width:1200px;
+            height:900px;
+            margin:0 auto;
+        }
+        #header{
+            height: 100px;
+            line-height: 100px;
+            font-size: large;
+        }
+        #container{
+            height:900px;
+            
+        }
+        #contents{
+            height: 500px;
+            padding: 13px 0;
+        }
+        #bot1{
+            float: left;
+            width: 600px;
+            height: 600px;
+        }
+        #bot2{
+            float: left;
+            
+            width: 600px;
+            height: 600px;
+        }
+        #footer{
+            height: 100px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>웹사이트 이름</h1>
+        </div>
+        
+        <div id="container">
+            <div id="contents">
+            <p> <br> <b>본문 내용</b> 삽입 공간 <br></p>
+            </div>
+            
+            <div id="bot1"><h2 class="botcontents">1번공간</h2>
+            <img id="botcontents" src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg" width='270' />
+            <p class="botcontents"> 사진 <br>
+            </p>
+            
+            </div>  
+
+            <div id="bot2"><h2 class="botcontents">2번공간</h2>
+            <video class="botcontents" src="http://www.w3schools.com/html/mov_bbb.mp4" width='500' controls autoplay> </video>
+            <p class="botcontents"> 영상 <br>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+
+    {% load static %}
+    <script src ="{% static 'js/test.js' %}"></script>
+</body>
+</html>

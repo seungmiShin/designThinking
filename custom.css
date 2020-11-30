@@ -1,0 +1,70 @@
+/*selectbox*/
+
+label.dropdownx select {
+	padding: 15px 45px 10px 10px;
+	background: #f8f8f8;
+	color: #444;
+	border: 1px solid #aaa;
+	border-radius: 0;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	outline: none;
+	font-size:30px;
+}
+label.dropdownx select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #444;
+}
+label.dropdownx select::-ms-expand {
+	display: none;
+}
+label.dropdownx:before {
+	content: '';
+	right: 5px;
+	top: 0px;
+	width: 30px;
+	height: 0px;
+	background: #f8f8f8;
+	position: absolute;
+	pointer-events: none;
+	display: block;
+}
+label.dropdownx { position: relative; }
+label.dropdownx:after {
+	content: '>';
+	font: 30px Consolas, monospace;
+	color: #444;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	right: 4px;
+	top: 15px;
+	border-bottom: 2px solid #aaa;
+	position: absolute;
+	pointer-events: none;
+	width: 35px;
+	padding: 0 0 0 0;
+	text-indent: 0px;
+}
+@media screen\0 {
+	label.dropdownx::cue-region {
+		width: 40px;
+		text-indent: 15px;
+		right: 0;
+	}
+}
+@media screen and (min--moz-device-pixel-ratio:0) {
+	label.dropdownx select { padding-right: 30px; }
+	label.dropdownx:before { right: 6px; }
+	label.dropdownx:after {
+		text-indent: 14px;
+		right: 6px;
+		top: -5px;
+		width: 36px;
+	}
+}
+

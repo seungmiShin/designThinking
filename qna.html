@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>키오스크 연습 웹사이트</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="qna.css">
+  <link rel="stylesheet" type="text/css" href="qna_1.css">
+</head>
+<body id="target">
+  <header>
+    <h1><a href="page_html.html">디자인적사고 프로젝트</a></h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="page_html.html">웹페이지에 대하여</a></li>
+      <li><a href="start1.html">키오스크 연습모드</a></li>
+      <li><a href="video.html">실습 동영상 보기</a></li>
+      <li><a href="qna.html">자주하는질문</a></li>
+    </ul>
+  </nav>
+  <div id="control">
+    <input type="button" class="btn btn-light" value="하얀배경" onclick="document.getElementById('target').className='white'"/>
+    <input type="button" class="btn btn-dark" value="검은배경" onclick="document.getElementById('target').className='black'"/>
+  </div>
+  <article>
+    <h2>자주하는질문</h2>
+      <br></br>
+    <div class="accordion">
+      <input type="checkbox" id="answer01">
+      <label for="answer01">Q1. '자주하는질문'은 무엇인가요?<em></em></label>
+      <div><p>
+          이 웹사이트를 이용할 때 궁금하신 사항을 질문할 수 있고, 자주 하는 질문들을 정리하였습니다.
+      </p></div>
+      <input type="checkbox" id="answer02">
+      <label for="answer02">Q2. 이 웹사이트는 어떻게 이용하나요?<em></em></label>
+      <div><p>
+          왼쪽에 '키오스크 연습모드'라고 써있는 이 글자를 클릭하신 뒤, 연습하고 싶은 상황에 맞추어 미리 키오스크를 사용해보실 수 있습니다. 
+      </p></div>
+      <input type="checkbox" id="answer03">
+      <label for="answer03">Q3. 연습모드는 도대체 뭐죠?<em></em></label>
+      <div><p>
+          연습모드는 병원 키오스크를 이용하는 데에 있어 어려움을 겪는 어르신들을 위해 병원에 가기 전 미리 연습해 보고 갈 수 있도록 구성해놓은 연습 창입니다.
+      </p></div>
+      <input type="checkbox" id="answer04">
+      <label for="answer04">Q4. 연습을 하다가 질문이 생겼어요. 어떻게 해야 하나요?<em></em></label>
+      <div><p>
+          <b>010-5256-0461</b>, <b>010-9171-8164</b>, <b>010-6798-2916</b><br> 이 번호는 웹 사이트를 만든 개발자의 번호입니다. 여기로 문자나 카톡을 보내주시면 신속한 답변 드리겠습니다.
+      </p></div>
+      <input type="checkbox" id="answer05">
+      <label for="answer05">Q5. 연습모드에 있는 키오스크는 어느 병원의 키오스크를 토대로 한 건가요?<em></em></label>
+      <div><p>
+          여러 대학병원의 키오스크를 종합적으로 커버할 수 있도록 만들어졌습니다.
+      </p></div>
+      <input type="checkbox" id="answer06">
+      <label for="answer06">Q6. 스마트폰으로도 이용할 수 있나요?<em></em></label>
+      <div><p>
+          아직은 서버가 구축되지 않아서 불가합니다. 하지만 빠른 시일 내에 스마트폰에서도 이 웹 사이트를 이용하실 수 있도록 하겠습니다.
+      </p></div>
+      <input type="checkbox" id="answer07">
+      <label for="answer07">Q7. 오른쪽 위에 있는 '하얀배경, 검은배경'버튼은 무엇인가요?<em></em></label>
+      <div><p>
+          사용하시는 분의 눈건강과 개인 취향에 따라 배경을 하얀색, 검은색으로 바꿀 수 있는 버튼입니다. 한번 시범삼아 눌러보세요!
+      </p></div>
+    </div>
+  </article>
+    
+</body>
+</html>
